@@ -13,7 +13,7 @@ const HomePage = () => {
             <div className="order-2 max-w-xl text-center lg:order-none lg:text-left">
               <span className="text-xl">Software developer</span>
               <h1 className="text-3xl font-bold mt-2">
-                Hello I'm <br />
+                Hello I&apos;m <br />
                 <span className="text-primary">Johnsen Berdin</span>
               </h1>
               <p className="mt-4 text-base text-muted-foreground max-w-md">
