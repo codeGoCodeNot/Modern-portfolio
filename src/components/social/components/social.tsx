@@ -3,7 +3,7 @@ import { socialItems } from "../social-items";
 
 const Social = () => {
   return (
-    <div className="flex gap-x-6">
+    <div className="flex gap-x-3">
       {socialItems.map((item) => (
         <Link
           href={item.path}

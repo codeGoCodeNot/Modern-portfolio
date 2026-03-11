@@ -1,3 +1,4 @@
+import Photo from "@/components/photo/components/photo";
 import Social from "@/components/social/components/social";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
@@ -7,7 +8,7 @@ const HomePage = () => {
     <section className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col lg:flex-row items-center justify-between">
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left order-2 lg:order-none">
             <span className="text-xl">Software developer</span>
             <h1 className="text-3xl font-bold mt-2">
               Hello I'm <br />
@@ -22,10 +23,13 @@ const HomePage = () => {
               </span> or{" "}
               <span className="font-semibold text-orange-700">Meepo</span>.
             </p>
-
             {/* btn and social accs */}
-            <div className="flex flex-col lg:flex-row items-center lg:gap-x-8 gap-y-8 mt-8">
-              <Button variant="outline" className="rounded-full px-6" size="lg">
+            <div className="flex flex-col lg:flex-row items-center lg:gap-x-6 gap-y-6 mt-15">
+              <Button
+                variant="outline"
+                className="border-primary rounded-full px-6"
+                size="lg"
+              >
                 <span>Download CV</span>
                 <FiDownload className="ml-1" />
               </Button>
@@ -34,9 +38,12 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div>Photo</div>
+          <div className="order-1 lg:order-none mb-8 lg:mb-0">
+            <Photo />
+          </div>
         </div>
       </div>
+      {/* <Stats /> */}
     </section>
   );
 };
