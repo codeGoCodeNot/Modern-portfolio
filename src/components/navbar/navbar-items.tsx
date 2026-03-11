@@ -1,34 +1,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { links } from "./navbar-links";
 
 const NavbarItems = () => {
-  const links = [
-    {
-      name: "Home",
-      href: "/",
-    },
-    {
-      name: "Resume",
-      href: "/resume",
-    },
-    {
-      name: "Services",
-      href: "/services",
-    },
-    {
-      name: "Work",
-      href: "/work",
-    },
-    {
-      name: "Contact",
-      href: "/contact",
-    },
-  ];
-
   const pathname = usePathname();
 
   return (
-    <div className="flex flex gap-x-8">
+    <div className="flex gap-x-8">
       {links.map((link) => (
         <Link
           key={link.name}
