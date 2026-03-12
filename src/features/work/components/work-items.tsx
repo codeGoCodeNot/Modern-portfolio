@@ -109,7 +109,6 @@ const WorkItems = () => {
               ))}
               <WorkSliderButtons
                 containerStyles="flex gap-x-2 absolute bottom-[calc(50%_-_22px)] right-0 z-20 justify-between w-full lg:justify-none lg:w-max lg:bottom-0"
-                btnStyles="bg-primary hover:bg-primary/10 transition-colors duration-300 text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
                 iconsStyles="text-white hover:text-primary transition-colors duration-300 text-xl"
               />
             </Swiper>

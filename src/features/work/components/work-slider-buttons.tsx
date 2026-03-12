@@ -2,36 +2,28 @@
 
 import { useSwiper } from "swiper/react";
 import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
+import { Button } from "@/components/ui/button";
 
 type WorkSliderButtonsProps = {
   containerStyles: string;
-  btnStyles: string;
   iconsStyles: string;
 };
 
 const WorkSliderButtons = ({
   containerStyles,
-  btnStyles,
+
   iconsStyles,
 }: WorkSliderButtonsProps) => {
   const swiper = useSwiper();
 
   return (
     <div className={containerStyles}>
-      <button
-        onClick={() => swiper.slidePrev()}
-        className={btnStyles}
-        disabled={swiper.isBeginning}
-      >
+      <Button onClick={() => swiper.slidePrev()} variant="outline">
         <PiCaretLeftBold className={iconsStyles} />
-      </button>
-      <button
-        onClick={() => swiper.slideNext()}
-        className={btnStyles}
-        disabled={swiper.isEnd}
-      >
+      </Button>
+      <Button onClick={() => swiper.slideNext()} variant="outline">
         <PiCaretRightBold className={iconsStyles} />
-      </button>
+      </Button>
     </div>
   );
 };
