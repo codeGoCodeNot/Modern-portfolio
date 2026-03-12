@@ -19,7 +19,7 @@ const ResumeItems = () => {
     >
       <Tabs
         defaultValue="experience"
-        className="min-w-[420px] flex justify-center"
+        className="min-w-[420px] flex justify-center items-center flex-1"
       >
         <TabsList className="bg-muted border border-border rounded-lg shadow-sm p-1 gap-2">
           <TabsTrigger
