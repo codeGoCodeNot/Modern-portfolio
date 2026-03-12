@@ -1,5 +1,7 @@
+import WorkItems from "@/features/work/components/work-items";
+
 const Work = () => {
-  return <div>Work</div>;
+  return <WorkItems />;
 };
 
 export default Work;
