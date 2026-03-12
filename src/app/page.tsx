@@ -31,9 +31,12 @@ const HomePage = () => {
                   variant="outline"
                   className="border-primary rounded-full px-6"
                   size="lg"
+                  asChild
                 >
-                  <span>Download CV</span>
-                  <FiDownload className="ml-1" />
+                  <a href="/assets/cv.pdf" download>
+                    <span>Download CV</span>
+                    <FiDownload className="ml-1" />
+                  </a>
                 </Button>
                 <div>
                   <Social />
