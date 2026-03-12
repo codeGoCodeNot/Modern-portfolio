@@ -92,7 +92,9 @@ const ResumeItems = () => {
               {skills.skillList.map((skill) => (
                 <div key={skill.name}>
                   <div className="flex flex-1 items-center  gap-x-2 text-lg mb-2 border border-border rounded-md p-2 max-w-[270px]">
-                    <div>{skill.icon && <skill.icon />}</div>
+                    <div className="text-primary">
+                      {skill.icon && <skill.icon />}
+                    </div>
                     <div> {skill.name}</div>
                   </div>
                 </div>
@@ -106,6 +108,17 @@ const ResumeItems = () => {
             <p className="text-muted-foreground text-sm max-w-[400px]">
               {about.description}
             </p>
+            <ul className="mt-6 space-y-2">
+              {about.info.map((item, idx) => (
+                <li
+                  key={idx}
+                  className="flex justify-between text-sm border-b pb-"
+                >
+                  <span className="font-semibold">{item.fieldName}:</span>
+                  <span className="px-5">{item.fieldValue}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </TabsContent>
       </Tabs>
