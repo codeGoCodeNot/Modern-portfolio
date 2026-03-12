@@ -1,5 +1,7 @@
+import ResumeLists from "@/features/resume/components/resume-lists";
+
 const Resume = () => {
-  return <div>Resume</div>;
+  return <ResumeLists />;
 };
 
 export default Resume;
