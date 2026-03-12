@@ -21,7 +21,7 @@ const ResumeItems = () => {
         defaultValue="experience"
         className="min-w-[420px] flex justify-center items-center flex-1"
       >
-        <TabsList className="bg-muted border border-border rounded-lg shadow-sm p-1 gap-2">
+        <TabsList className="bg-muted border border-border rounded-lg shadow-sm p-1">
           <TabsTrigger
             value="experience"
             className="px-4 py-2 rounded-md text-sm font-semibold transition-colors data-active:bg-background data-active:text-primary hover:bg-accent hover:text-accent-foreground"
