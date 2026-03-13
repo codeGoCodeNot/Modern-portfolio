@@ -1,5 +1,7 @@
+import ContactList from "@/features/contacts/components/contact-list";
+
 const Contact = () => {
-  return <div>Contact</div>;
+  return <ContactList />;
 };
 
 export default Contact;
