@@ -29,15 +29,15 @@ export const projects = [
   },
   {
     number: "03",
-    category: "Fullstack",
-    title: "Better Authentication",
-    image: "/assets/minidashboard.png",
+    category: "Frontend",
+    title: "GameHub",
+    image: "/assets/gamehub.png",
     stack: [
-      "Next.js, TypeScript, Tailwind CSS, Better-auth.js, Prisma, PostgreSQL",
+      "React, TypeScript, Vite, React Query, Zustand, Tailwind CSS, React Router",
     ],
     description:
-      "A Next.js app demonstrating enhanced authentication with Better-auth.js, Prisma, and PostgreSQL. Features include secure user registration, login, password reset, and social authentication options.",
-    githubLink: "https://github.com/codeGoCodeNot/Better-auth-Practice",
-    link: "https://minidashboard.johnsenb.dev",
+      "A game discovery web app featuring 500k+ games from the RAWG API. Built with React 19 and TypeScript, it includes advanced filtering by genre and platform, search functionality, infinite scroll pagination, and detailed game pages with trailers and screenshots. Features dark mode support and clean state management with Zustand.",
+    githubLink: "https://github.com/codeGoCodeNot/gamehub",
+    link: "https://gamehub.johnsenb.dev",
   },
 ];
