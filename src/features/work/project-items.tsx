@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export const projects = [
   {
     number: "01",
@@ -39,5 +37,18 @@ export const projects = [
       "A game discovery web app featuring 500k+ games from the RAWG API. Built with React 19 and TypeScript, it includes advanced filtering by genre and platform, search functionality, infinite scroll pagination, and detailed game pages with trailers and screenshots. Features dark mode support and clean state management with Zustand.",
     githubLink: "https://github.com/codeGoCodeNot/gamehub",
     link: "https://gamehub.johnsenb.dev",
+  },
+  {
+    number: "04",
+    category: "Frontend",
+    title: "MovieHub",
+    image: "/assets/moviehub.png",
+    stack: [
+      "React 19, TypeScript, Vite, TanStack Query, Zustand, Tailwind CSS, React Router, shadcn/ui",
+    ],
+    description:
+      "Movie and TV discovery platform with infinite scroll pagination, cinematic detail pages, and cast carousels. Features a feature-based architecture with reusable custom hooks and full TypeScript type safety across Movies, TV Shows, People, and real-time search using TMDB API.",
+    githubLink: "https://github.com/codeGoCodeNot/MovieHub",
+    link: "https://moviehub.johnsenb.dev",
   },
 ];
