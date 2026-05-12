@@ -1,6 +1,5 @@
 export type GithubRepoResponse = {
   fork: boolean;
-  language: string | null;
 };
 
 export type GithubCommitSearchResponse = {
@@ -9,6 +8,5 @@ export type GithubCommitSearchResponse = {
 
 export type GithubLiveStats = {
   projectsCompleted: number;
-  technologiesUsed: number;
   codeCommits: number;
 };

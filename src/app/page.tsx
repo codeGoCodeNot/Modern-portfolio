@@ -11,7 +11,13 @@ const HomePage = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-0">
           <div className="flex min-h-[58vh] flex-col items-center justify-center gap-8 lg:min-h-[64vh] lg:flex-row lg:justify-between lg:gap-14">
             <div className="order-2 max-w-xl text-center lg:order-none lg:text-left">
-              <span className="text-xl">Software developer</span>
+              <div className="inline-flex items-center gap-2 text-xs font-medium text-green-500 bg-green-500/10 border border-green-500/20 rounded-full px-3 py-1.5 mb-4">
+                <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
+                Open to work · Seeking Junior Web Developer roles
+              </div>
+              <div>
+                <span className="text-xl">Software developer</span>
+              </div>
               <h1 className="text-3xl font-bold mt-2">
                 Hello I&apos;m <br />
                 <span className="text-primary">Johnsen Berdin</span>

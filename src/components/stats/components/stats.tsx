@@ -10,7 +10,6 @@ import { GithubLiveStats } from "../type";
 
 const EMPTY_GITHUB_STATS: GithubLiveStats = {
   projectsCompleted: 0,
-  technologiesUsed: 0,
   codeCommits: 0,
 };
 
@@ -32,7 +31,6 @@ const Stats = () => {
 
   const liveStatsById: Record<string, number> = {
     projectsCompleted: githubStats.projectsCompleted,
-    technologiesUsed: githubStats.technologiesUsed,
     codeCommits: githubStats.codeCommits,
   };
 

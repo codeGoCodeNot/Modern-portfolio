@@ -30,15 +30,8 @@ export const fetchGithubStats = async (): Promise<GithubLiveStats> => {
 
   const ownedRepos = repos.filter((repo) => !repo.fork);
 
-  const technologiesUsed = new Set(
-    ownedRepos
-      .map((repo) => repo.language)
-      .filter((language): language is string => Boolean(language)),
-  ).size;
-
   return {
     projectsCompleted: ownedRepos.length,
-    technologiesUsed,
     codeCommits: commitsData.total_count ?? 0,
   };
 };
